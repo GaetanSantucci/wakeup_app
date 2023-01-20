@@ -1,5 +1,7 @@
 'use client';
-import './navbar.scss'
+import './navbar.scss';
+import styles from 'app/page.module.scss';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -27,7 +29,7 @@ const Navbar = () => {
   return (
     <ul className='header__navbar'>
       {
-        navTitle.map((elem) => <li key={elem.category} className={router === elem.slug ? 'is-active' : ''}><Link href={elem.slug}>{elem.category}</Link></li>)
+        navTitle.map((elem) => <li key={elem.category} className={router === elem.slug ? `${styles.header__navbar} ${styles.is__active}` : `${styles.header__navbar}`}><Link href={elem.slug}>{elem.category}</Link></li>)
       }
     </ul>
   )

@@ -1,5 +1,5 @@
 import './globals.scss'
-import { Header } from '/components';
+import { Header, Footer } from '/components';
 
 
 export default function RootLayout({ children }) {
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
       <Header />
       {children}
+      <Footer />
       </body>
     </html>
   )

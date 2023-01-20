@@ -41,7 +41,7 @@ const Articles = () => {
               <div className={styles.section__homepage__main__article__description}  >
                 <h1 className={styles.section__homepage__main__article__title}>{elem.title}</h1>
                 <p className={styles.section__homepage__main__article__text}>{elem.desc}</p>
-                <button className='button'>{elem.button_text}</button>
+                <button className={styles.button}>{elem.button_text}</button>
               </div>
               <Image src={elem.image} width={480} height={640} alt='/'></Image>
             </article>
