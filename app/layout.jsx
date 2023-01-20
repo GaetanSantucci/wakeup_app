@@ -1,5 +1,5 @@
 import './globals.scss'
-import { Header } from '/components/';
+import { Header } from '/components';
 
 
 export default function RootLayout({ children }) {
