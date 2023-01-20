@@ -1,91 +1,75 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+/* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
+import brunchHeaderLeft from 'public/images/plateau_dolce_situation1.jpg'
+import brunchHeaderRight from 'public/images/plateau_veggie_sunshine_2.jpg';
+import brunchVeggie from 'public/images/plateau_veggie_situation2.jpg';
+
+import { Inter } from '@next/font/google';
+import styles from './page.module.scss';
+
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.jsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.section__homepage__header}>
+        <Image src={brunchHeaderLeft} width={500} alt='photo plateau dolce vita'/>
+        <Image src={brunchHeaderRight} width={500} alt='photo plateau veggie et plateau sunshine'/>
+      </div>
+      <section className={styles.section__homepage__header__presentation}>
+        <div className={styles.section__homepage__header__presentation__text}>
+          <p>L'histoire de WAKE UP c'est avant tout le plaisir de faire de bons et beaux petits déjeuners fait-maison ! Nous privilégions des produits frais, locaux et surtout nous prônons le fait-maison !</p>
+          <p>Nous travaillons avec des artisans locaux et nous utilisons des produits frais et de qualité.</p>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <div className={styles.section__homepage__header__presentation__text}>
+          <p>Qui n'a jamais rêvé de se faire livrer un bon petit déjeuner ou un brunch sans qu'il n'ait à sortir de chez lui et surtout sans bouger le petit doigt ? </p>
+          <p>Découvrez notre sélection de plateaux gourmands et laissez-vous tenter ! </p>
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section className={styles.section__homepage__main}>
+        <article className={styles.section__homepage__main__article}>
+          <div className={styles.section__homepage__main__article__left}>
+          <h1 className={styles.section__homepage__main__article__title}>Title</h1>
+          <p className={styles.section__homepage__main__article__description}></p>          
+          <p className={styles.section__homepage__main__article__description}></p>
+          <p className={styles.section__homepage__main__article__description}></p>
+          <button className='button'>En savoir plus</button>
+          </div>
+          <Image src={brunchVeggie} width={400} alt='brunch'></Image>
+        </article>
+        <article className={styles.section__homepage__main__article}>
+          <div className={styles.section__homepage__main__article__left}>
+          <h1 className={styles.section__homepage__main__article__title}>Title</h1>
+          <p className={styles.section__homepage__main__article__description}></p>          
+          <p className={styles.section__homepage__main__article__description}></p>
+          <p className={styles.section__homepage__main__article__description}></p>
+          <button className='button'>En savoir plus</button>
+          </div>
+          <Image src={brunchVeggie} width={400} alt='brunch'></Image>
+        </article>
+        <article className={styles.section__homepage__main__article}>
+          <div className={styles.section__homepage__main__article__left}>
+          <h1 className={styles.section__homepage__main__article__title}>Title</h1>
+          <p className={styles.section__homepage__main__article__description}></p>          
+          <p className={styles.section__homepage__main__article__description}></p>
+          <p className={styles.section__homepage__main__article__description}></p>
+          <button className='button'>En savoir plus</button>
+          </div>
+          <Image src={brunchVeggie} width={400} alt='brunch'></Image>
+        </article>
+        <article className={styles.section__homepage__main__article}>
+          <div className={styles.section__homepage__main__article__left}>
+          <h1 className={styles.section__homepage__main__article__title}>Title</h1>
+          <p className={styles.section__homepage__main__article__description}></p>          
+          <p className={styles.section__homepage__main__article__description}></p>
+          <p className={styles.section__homepage__main__article__description}></p>
+          <button className='button'>En savoir plus</button>
+          </div>
+          <Image src={brunchVeggie} width={400} alt='brunch'></Image>
+        </article>
+      </section>
     </main>
   )
 }

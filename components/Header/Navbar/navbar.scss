@@ -1,0 +1,19 @@
+.header__navbar {
+  width: 75%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+
+  & > li {
+    margin: 0 2rem;
+    padding-top: 0.4rem;
+    white-space: nowrap;
+    color: grey;
+  }
+}
+
+.is-active {
+  border-top: 1px solid black;
+  color: black !important;
+}
