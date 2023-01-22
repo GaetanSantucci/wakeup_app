@@ -5,7 +5,7 @@ import Image from 'next/image';
 import brunchHeaderLeft from 'public/images/plateau_dolce_situation1.jpg'
 import brunchHeaderRight from 'public/images/plateau_veggie_sunshine_2.jpg';
 
-import { Articles, Posts } from '../components';
+import { Articles } from '../components';
 
 import { Inter } from '@next/font/google';
 import styles from './page.module.scss';
@@ -32,7 +32,6 @@ export default function Home() {
         </div>
       <Articles />
       </section>
-      <Posts />
     </main>
   )
 }
