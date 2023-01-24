@@ -1,3 +1,4 @@
+import '/public/styles/reset.scss';
 import './globals.scss'
 import { Header, Footer } from '/components';
 
