@@ -2,9 +2,9 @@ import styles from 'app/page.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import logoInstagram from 'public/images/instagram-logo.png';
-import logoFacebook from 'public/images/facebook-logo.png';
-import logoLinkedIn from 'public/images/linkedin-logo.png';
+import logoInstagram from 'public/images/logo_instagram.png';
+import logoFacebook from 'public/images/logo_facebook.png';
+import logoLinkedIn from 'public/images/logo_linkedin.png';
 
 
 const Footer = () => {

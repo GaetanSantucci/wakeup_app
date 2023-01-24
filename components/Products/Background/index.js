@@ -1,15 +1,11 @@
 import Image from 'next/image';
-import backgroundImage from '/public/images/marbre_portrait.jpg'
+import backgroundImage from '/public/images/marbre.png'
+import styles from '/app/page.module.scss';
 
-
-const backgroundStyle = {
-  zIndex: -1,
-
-}
 export default function Background() {
   return (
-    <>
-      <Image src={backgroundImage} alt='fond marbre' fill style={backgroundStyle} />
-    </>
+    <div className={styles.background__plate} >
+      <Image src={backgroundImage} alt='fond marbre' fill />
+    </div>
   )
 }

@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Background from './Background';
 
-import styles from '../../app/globals.scss';
+import logo from '/public/logo/logowakeuppng.png'
+
+import styles from '/app/page.module.scss';
 
 
 const products = [
@@ -45,9 +48,9 @@ export default function Products() {
         products.map(product => {
           return (
             <div className={styles.main__container__product__card} key={product.name}>
-
+              <Background />
               <div className={styles.main__container__product__card__image}>
-                <Image src={product.image} alt={product.name} width={350} height={500} />
+                <Image src={product.image} alt={product.name} width={480} height={680} />
               </div>
               <div className={styles.main__container__product__card__desc}>
                 <div className={styles.main__container__product__card__title}>

@@ -3,13 +3,13 @@
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.2rem;
+  font-size: 2rem;
 
   & > li {
-    margin: 0 2rem;
-    padding-top: 0.4rem;
+    margin: 2rem;
+    padding-top: 1rem;
     white-space: nowrap;
-    color: grey;
+    color: var(--color--text-inactive);
   }
 }
 
