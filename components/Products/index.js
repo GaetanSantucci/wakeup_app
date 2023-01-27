@@ -1,66 +1,36 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import styles from '@/app/page.module.scss';
 
-import styles from '/app/page.module.scss';
+import { getProductsData } from '@/lib/products';
 
+export default async function Products() {
 
-const products = [
-  {
-    name: 'Plateau Sunshine',
-    desc: '',
-    price: "29,90",
-    image: 'http://localhost:3000/images/sunshine_marbre.png'
-  }, {
-    name: 'Plateau Veggie',
-    desc: '',
-    price: " 34,90",
-    image: 'http://localhost:3000/images/veggie_marbre.png'
-  }, {
-    name: 'Plateau Best Seller',
-    desc: '',
-    price: "42,90",
-    image: 'http://localhost:3000/images/bestseller_marbre.png'
-  }, {
-    name: 'Plateau Dolce Vita',
-    desc: '',
-    price: "49,90",
-    image: 'http://localhost:3000/images/dolce_marbre.png'
-  }, {
-    name: 'Plateau Apéritif',
-    desc: '',
-    price: '69,90',
-    image: 'http://localhost:3000/images/aperitif_marbre.png'
-  }, {
-    name: 'Prosecco Riccadonna',
-    desc: '',
-    price: '6,90',
-    image: 'http://localhost:3000/images/prosecco_marbre.png'
-  }
-]
+  const products = await getProductsData();
 
-export default function Products() {
   return (
     <section className={styles.main__container__product}>
       {
         products.map(product => {
+          console.log('product: ', product.slug);
+          const price = product.price.toString().replace('.', ',');
           return (
             <div className={styles.main__container__product__card} key={product.name}>
               <div className={styles.main__container__product__card__image}>
-                <Image src={product.image} alt={product.name} width={480} height={680} />
+                <Image src={product.image} alt={product.name} width={280} height={420} />
               </div>
               <div className={styles.main__container__product__card__desc}>
                 <div className={styles.main__container__product__card__title}>
-                  <h2>{product.name.toUpperCase()}</h2>
-                  <p>{product.price} €</p>
+                  <h2>{product.name}</h2>
+                  <p>{price} €</p>
                 </div>
                 <div className={styles.main__container__product__card__information}>
-                  <Link href='#'>En savoir plus</Link>
-                  <button className={styles.button}>Réserver</button>
+                  <Link href={`/plate/${product.slug}/${product.id}`} >En savoir plus</Link>
+                  <Link href='https://wakeupclf.simplybook.it/v2/#book' target='blank'><button className={styles.button}>Réserver</button></Link>
                 </div>
               </div>
             </div>
-
           )
         })
       }

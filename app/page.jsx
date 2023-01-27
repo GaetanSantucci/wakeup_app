@@ -7,19 +7,18 @@ import brunchHeaderRight from 'public/images/plateau_veggie_sunshine_2.jpg';
 
 import { Articles } from '../components';
 
-import { Inter } from '@next/font/google';
 import styles from './page.module.scss';
 
+import { Montserrat } from '@next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
-
+const roboto = Montserrat({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.section__homepage__header}>
-        <Image src={brunchHeaderLeft} style={{height: "45%", width:"45%"}} alt='photo plateau dolce vita'/>
-        <Image src={brunchHeaderRight} style={{height: "45%", width:"45%"}} alt='photo plateau veggie et plateau sunshine'/>
+        <Image src={brunchHeaderLeft} style={{height: "50%", width:"50%"}} alt='photo plateau dolce vita'/>
+        <Image src={brunchHeaderRight} style={{height: "50%", width:"50%"}} alt='photo plateau veggie et plateau sunshine'/>
       </div>
       <section className={styles.section__homepage__header__presentation}>
         <div className={styles.section__homepage__header__presentation__text}>
@@ -35,3 +34,4 @@ export default function Home() {
     </main>
   )
 }
+
