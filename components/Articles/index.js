@@ -2,7 +2,7 @@ import styles from 'app/page.module.scss';
 
 import Image from 'next/image';
 
-import { getArticlesData } from '@/lib/articles';
+import { getArticlesData } from '@/utils/getArticles';
 
 const Articles = async () => {
 

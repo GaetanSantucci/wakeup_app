@@ -1,4 +1,23 @@
+@font-face {
+  font-family: 'roboto';
+  src: url('../public/fonts/Roboto-Light.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'roboto-italic';
+  src: url('../public/fonts/Roboto-LightItalic.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'playfair';
+  src: url('../public/fonts/PlayfairDisplay-VariableFont_wght.ttf')
+    format('opentype');
+}
+
 :root {
+  --fontTitle: 'playfair';
+  --fontText: 'roboto';
+  --fontItalic: 'roboto-italic';
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -6,8 +25,9 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --color--text: #000000;
+  --text--color-secondary: #3f3f3fb8;
   --color--text-inactive: #9d9d9d;
-  --background-color: #f3f3f3;
+  --background-color: #ffffff;
 
   --hover--link: #cacaca;
   --color--button: #000000;

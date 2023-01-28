@@ -5,7 +5,7 @@ import Image from 'next/image';
 import brunchHeaderLeft from 'public/images/plateau_dolce_situation1.jpg'
 import brunchHeaderRight from 'public/images/plateau_veggie_sunshine_2.jpg';
 
-import { Articles } from '../components';
+import { Articles, ScrollToTop } from '../components';
 
 import styles from './page.module.scss';
 
@@ -16,6 +16,7 @@ const roboto = Montserrat({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className={styles.main}>
+      <ScrollToTop />
       <div className={styles.section__homepage__header}>
         <Image src={brunchHeaderLeft} style={{height: "50%", width:"50%"}} alt='photo plateau dolce vita'/>
         <Image src={brunchHeaderRight} style={{height: "50%", width:"50%"}} alt='photo plateau veggie et plateau sunshine'/>

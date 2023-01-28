@@ -24,7 +24,6 @@ const navTitle = [{
 const Navbar = () => {
 
   const router = usePathname();
-  console.log('router: ', router);
 
   return (
     <ul className='header__navbar'>

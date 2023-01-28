@@ -2,8 +2,20 @@
 
 import { useEffect } from 'react'
 
-export default function ScrollUp() {
+function ScrollUp() {
+  useEffect(() => window.document.scrollingElement?.scrollTo({
+    top: 465,
+    left: 0,
+    behavior: 'smooth'
+  }), [])
+
+  return null
+}
+
+function ScrollToTop() {
   useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
 
   return null
 }
+
+export { ScrollToTop, ScrollUp }
