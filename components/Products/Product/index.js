@@ -18,7 +18,7 @@ export default async function Product({ id }) {
       {
         product.map(elem => {
           const price = elem.price.toString().replace('.', ',');
-          const text = elem.description.split('\n')
+          const text = elem.description.split('\\n')
 
           return (
             <div className={styles.main__product__container__card} key={elem.name}>

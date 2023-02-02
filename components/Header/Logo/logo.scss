@@ -1,0 +1,22 @@
+@media (max-width: 1023px) {
+  .header_image {
+    margin-left: 1rem;
+    & img {
+      width: 200px;
+      height: 198px;
+      // aspect-ratio: auto;
+      // position: absolute;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .header_image {
+    margin-left: 1rem;
+    & img {
+      width: 124px;
+      height: 120px;
+      // aspect-ratio: auto;
+      // position: absolute;
+    }
+  }
+}

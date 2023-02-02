@@ -1,25 +1,39 @@
-import styles from 'app/page.module.scss';
+// import styles from 'app/page.module.scss';
+import styles from '/public/styles/Article.module.scss';
 
 import Image from 'next/image';
 
-import { getArticlesData } from '@/utils/getArticles';
+import { getArticlesData } from '/libs/getArticleList';
+import Link from 'next/link';
 
 const Articles = async () => {
 
   const articlesList = await getArticlesData();
+
   return (
-    <section className={styles.section__homepage__main}>
+    <section className={styles.articles__container}>
       {
         articlesList.map((elem, i) => {
+
+          const paragraph = elem.description.split('\\n')
+
           return (
-            <article key={elem.id} className={i % 2 ? `${styles.section__homepage__main__article} ${styles.section__homepage__main__article__left}` : `${styles.section__homepage__main__article}`}>
-              <div className={styles.section__homepage__main__article__description}  >
-                <h2 className={styles.section__homepage__main__article__title}>{elem.title}</h2>
-                <p className={styles.section__homepage__main__article__text}>{elem.description}</p>
-                <button className={styles.button}>{elem.interaction}</button>
+            <div key={elem.title} className={i % 2 ? `${styles.articles__container__item} ${styles.articles__container__item__left}` : `${styles.articles__container__item}`}>
+              <div className={styles.articles__container__item__description}>
+                <h2 className={styles.articles__container__item__description__title}>{elem.title}</h2>
+                <div className={styles.articles__container__item__description__text}>
+                  {
+                    paragraph.map(para => <p key={para}>{para}</p>)
+                  }
+                </div>
+                <Link href={`/${elem.slug}`} >
+                  <button className={styles.button}>{elem.interaction}</button>
+                </Link>
               </div>
-              <Image src={elem.image} width={640} height={450} alt='photo {elem.title}'></Image>
-            </article>
+              <div className={styles.articles__container__image}>
+                <Image src={elem.image} fill sizes='640' alt={`photo ${elem.title}`}></Image>
+              </div>
+            </div>
           )
         })
       }

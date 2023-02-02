@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '/public/logo/logowakeuppng.png';
+import './logo.scss'
 
 
 const Logo = () => {
   return (
-    <Link href='/'>
-      <Image src={logo} className='logo__image' width={300} alt='Wake up clermont-ferrand Logo' />
-    </Link>
+    <div className='header_image'>
+      <Link href='/'>
+        <Image src={logo} className='logo__image' priority width={300} alt='Wake up clermont-ferrand Logo' />
+      </Link>
+    </div>
   )
 
 }

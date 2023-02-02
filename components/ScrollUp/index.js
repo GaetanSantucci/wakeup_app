@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 function ScrollUp() {
   useEffect(() => window.document.scrollingElement?.scrollTo({
-    top: 465,
+    top: 410,
     left: 0,
     behavior: 'smooth'
   }), [])

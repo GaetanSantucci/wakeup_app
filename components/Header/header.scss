@@ -6,3 +6,21 @@
   justify-content: center;
   margin-top: 3rem;
 }
+
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 14vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
