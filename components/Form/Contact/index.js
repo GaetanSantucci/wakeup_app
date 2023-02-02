@@ -7,7 +7,6 @@ import styles from '/public/styles/Contact.module.scss';
 export default function Contact() {
   return (
     <>
-      <h1 className={styles.title}>N'hésitez pas à nous contacter</h1>
       <form className={`${styles.contact_form} ${styles.row}`}>
         <div className={`${styles.form_field} ${styles.col} ${styles.x_50}`}>
           <input id="lastname" className={`${styles.input_text} ${styles.js_input}`} type="text" required />

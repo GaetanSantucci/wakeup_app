@@ -1,12 +1,14 @@
 import styles from '../page.module.scss';
+
 import { Contact } from '@/components/Form';
-import { ScrollUp } from '@/components';
+import { ScrollToTop } from '@/components';
 
 export default function contact() {
   return (
-    <main className={styles.main}>
-      <ScrollUp />
+    <>
+      <h1 className={styles.main__title}>N'hésitez pas à nous contacter</h1>
+      <ScrollToTop />
       <Contact />
-    </main>
+    </>
   )
 }

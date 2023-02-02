@@ -40,9 +40,10 @@
   font-family: var(--fontText);
 
   &__title {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     margin: 2rem;
     font-family: var(--fontTitle);
+    text-transform: uppercase;
   }
 
   &__container__product {
