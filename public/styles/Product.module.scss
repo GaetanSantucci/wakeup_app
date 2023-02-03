@@ -7,11 +7,12 @@
 
   &__card {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem;
+    padding: 1rem;
 
     &__image {
       display: flex;
@@ -39,27 +40,34 @@
       letter-spacing: 1.2px;
       line-height: 1.4;
       font-size: 1.2rem;
-      & h2 {
-        text-transform: uppercase;
-      }
 
       & p {
         font-size: 1.6rem;
         font-weight: bold;
+        color: #000000;
       }
     }
 
     &__information {
       font-size: 1rem;
       color: var(--text--color-secondary);
+
+      & a:nth-last-child(1) {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+      }
     }
+  }
+  & h3 {
+    font-size: 1.8rem;
   }
 }
 
 .button {
-  width: 180px;
+  width: 100%;
   margin-top: 1rem;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--color--button);
   border-style: none;
   font-size: 1rem;

@@ -45,7 +45,7 @@ export default function Reviews() {
 
   return (
     <>
-      <h2 style={{ fontFamily: 'var(--fontTitle)', textAlign: 'center', fontSize: '2rem' }}>Nos avis clients</h2>
+      <h2>Nos avis clients</h2>
       <div className={styles.reviews__container}>
         {
           reviews.map((r, i) => {
@@ -54,14 +54,13 @@ export default function Reviews() {
                 <div>{displayStars(r.stars)}</div>
                 <div onClick={() => handleButtonClick(i)}>
                   <p className={selectedElement === r.id ? `${styles.more__line}` : null}><span style={{ fontSize: '2rem' }}>&#8223;</span>{r.comments}</p>
-                  {(r.comments.length >= 120 && (selectedElement !== r.id)) ? <span style={{ color: '#000000', textDecoration: 'underline', fontSize: '0.8rem' }}>plus...</span> : null}
-                  {/* <span>&rdquo;</span> */}
+                  {(r.comments.length >= 95 && (selectedElement !== r.id)) ? <span style={{ color: '#000000', textDecoration: 'underline', fontSize: '0.8rem' }}>plus...</span> : null}
                 </div>
-                <span>{r.name}</span><code>{r.date}</code>
+                <div className={styles.reviews__container__card__info}>
+                  <span>{r.name}</span><span>{r.date}</span>
+                </div>
               </div>
-
             )
-
           })
         }
       </div>

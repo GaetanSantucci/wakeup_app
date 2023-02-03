@@ -20,7 +20,7 @@ const Articles = async () => {
           return (
             <div key={elem.title} className={i % 2 ? `${styles.articles__container__item} ${styles.articles__container__item__left}` : `${styles.articles__container__item}`}>
               <div className={styles.articles__container__item__description}>
-                <h2 className={styles.articles__container__item__description__title}>{elem.title}</h2>
+                <h3>{elem.title}</h3>
                 <div className={styles.articles__container__item__description__text}>
                   {
                     paragraph.map(para => <p key={para}>{para}</p>)

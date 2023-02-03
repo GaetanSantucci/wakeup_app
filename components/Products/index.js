@@ -23,7 +23,7 @@ export default async function Products() {
               </Link>
               <div className={styles.product__container__card__desc}>
                 <div className={styles.product__container__card__title}>
-                  <h2>{product.name}</h2>
+                  <h3>{product.name}</h3>
                   <p>{price} €</p>
                 </div>
                 <div className={styles.product__container__card__information}>

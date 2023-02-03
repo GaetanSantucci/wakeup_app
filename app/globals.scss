@@ -34,6 +34,7 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --paragraph--color: #3e3e3e;
+  --colorTitle: #000000;
   --text--color-secondary: #3f3f3fb8;
   --color--text-inactive: #9d9d9d;
   --background-color: #ffffff;
@@ -131,6 +132,22 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+h1,
+h2 {
+  font-family: var(--fontTitle);
+  font-size: 2.4rem;
+  color: var(--colorTitle);
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fontTitle);
+  color: var(--colorTitle);
+  text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <ScrollToTop />
-      <Header />
+        <Header />
       <main className={styles.main}>
       {children}
       </main>
