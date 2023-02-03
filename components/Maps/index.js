@@ -15,7 +15,7 @@ export default function Maps() {
 
   const data = use(areaFetch);
 
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState();
   const [isAvailable, setIsAvailable] = useState();
   const [notInOurZone, setNotInOurZone] = useState();
 
@@ -43,7 +43,7 @@ export default function Maps() {
   return (
     <div className={styles.delivery__container}>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='entrez votre ville' value={inputValue} onChange={handleChangeCity} />
+        <input type="text" placeholder='Entrez votre ville' value={inputValue} onChange={handleChangeCity} />
       </form>
 
       {

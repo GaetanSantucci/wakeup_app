@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 4rem;
+    margin: 4rem 0;
     font-family: var(--fontText);
 
     &__left {
@@ -44,6 +44,16 @@
     width: 600px;
     height: 450px;
   }
+}
+
+.button {
+  width: 180px;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: var(--color--button);
+  border-style: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1023px) {

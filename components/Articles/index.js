@@ -31,7 +31,7 @@ const Articles = async () => {
                 </Link>
               </div>
               <div className={styles.articles__container__image}>
-                <Image src={elem.image} fill sizes='640' alt={`photo ${elem.title}`}></Image>
+                <Image src={elem.image} style={{ height: "100%", width: "100%" }} width={640} height={453} alt={`photo ${elem.title}`}></Image>
               </div>
             </div>
           )

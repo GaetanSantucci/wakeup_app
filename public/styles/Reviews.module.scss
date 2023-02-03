@@ -1,0 +1,38 @@
+.reviews__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 80%;
+  margin-top: 2rem;
+  // padding: 1rem;
+  text-align: start;
+
+  &__card {
+    width: 30%;
+    margin: 2rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background: #fafafa;
+    box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
+
+    & > * {
+      margin: 1.4rem;
+    }
+
+    & p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.more__line {
+  color: black;
+  display: -webkit-box;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: vertical;
+  overflow: visible;
+}
