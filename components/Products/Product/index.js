@@ -3,9 +3,7 @@ import styles from '@/app/page.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import backgroundImage from '/public/images/fond_marbre_noir.jpg'
-
-import { getProductById } from '@/utils/getProducts';
+import { getProductById } from '/libs/getProductList';
 
 export default async function Product({ id }) {
 
@@ -42,7 +40,6 @@ export default async function Product({ id }) {
           )
           // }
         })
-
       }
     </div>
   );

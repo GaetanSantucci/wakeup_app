@@ -1,5 +1,6 @@
 .loader {
   margin: 1rem;
+  width: 15%;
 }
 .first {
   fill: transparent;
@@ -8,7 +9,7 @@
   stroke-dasharray: 550;
   stroke-dashoffset: 550;
   animation-iteration-count: 1;
-  animation: dash 2s linear infinite reverse;
+  animation: dash 1s linear infinite reverse;
 }
 
 .second {
@@ -17,7 +18,7 @@
   stroke: #191919;
   stroke-dasharray: 550;
   stroke-dashoffset: 550;
-  animation: dash 2s linear infinite reverse;
+  animation: dash 1s linear infinite reverse;
 }
 
 .three {
@@ -26,7 +27,7 @@
   stroke: #191919;
   stroke-dasharray: 550;
   stroke-dashoffset: 550;
-  animation: dash 2s linear infinite reverse;
+  animation: dash 1s linear infinite reverse;
 }
 .four {
   fill: transparent;
@@ -34,7 +35,7 @@
   stroke: #191919;
   stroke-dasharray: 550;
   stroke-dashoffset: 550;
-  animation: dash 2s linear infinite reverse;
+  animation: dash 1s linear infinite reverse;
 }
 
 .five {
@@ -43,7 +44,7 @@
   stroke: #191919;
   stroke-dasharray: 550;
   stroke-dashoffset: 550;
-  animation: dash 2s linear infinite reverse;
+  animation: dash 1s linear infinite reverse;
 }
 
 @keyframes dash {
@@ -51,6 +52,6 @@
     stroke-dashoffset: 0;
   }
   100% {
-    stroke-dashoffset: 1100;
+    stroke-dashoffset: 550;
   }
 }
