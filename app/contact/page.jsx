@@ -1,4 +1,4 @@
-import styles from '../page.module.scss';
+import styles from '/public/styles/Homepage.module.scss';
 
 import { Contact } from '@/components/Form';
 import { ScrollToTop } from '@/components';

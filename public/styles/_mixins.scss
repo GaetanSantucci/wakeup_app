@@ -1,0 +1,7 @@
+@mixin button($size, $padding, $background) {
+  width: $size;
+  padding: $padding;
+  background-color: $background;
+  font-size: 1rem;
+  cursor: pointer;
+}

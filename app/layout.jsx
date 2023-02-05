@@ -1,6 +1,7 @@
 import '/public/styles/reset.scss';
-import './globals.scss';
-import styles from './page.module.scss';
+import '/public/styles/globals.scss';
+
+import styles from '/public/styles/Homepage.module.scss';
 
 import { Header, Footer } from '/components';
 import { ScrollToTop } from '@/components';

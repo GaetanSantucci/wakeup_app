@@ -9,7 +9,7 @@ import brunchHeaderRight from 'public/images/plateau_veggie_sunshine_2.jpg';
 import { Articles, InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
 
 //Styles
-import styles from './page.module.scss';
+import styles from '/public/styles/Homepage.module.scss';
 
 import { Suspense } from 'react';
 

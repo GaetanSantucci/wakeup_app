@@ -1,4 +1,5 @@
-import styles from '../page.module.scss';
+import styles from '/public/styles/Homepage.module.scss';
+
 import { ScrollUp, Spinner } from '@/components';
 
 export default function EventPage() {

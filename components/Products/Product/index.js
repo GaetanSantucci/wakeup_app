@@ -1,4 +1,4 @@
-import styles from '@/app/page.module.scss';
+import styles from '/public/styles/Homepage.module.scss';
 
 import Image from 'next/image';
 import Link from 'next/link';

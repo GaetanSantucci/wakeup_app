@@ -1,4 +1,4 @@
-import styles from '../page.module.scss';
+import styles from '/public/styles/Homepage.module.scss';
 
 import { InstaLink, Products, ScrollUp, Spinner } from '@/components';
 import { Suspense } from 'react';

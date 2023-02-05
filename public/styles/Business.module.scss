@@ -1,3 +1,6 @@
+@use './mixins';
+@use './vars';
+
 .container__business {
   margin-top: 3rem;
   width: 100%;
@@ -61,11 +64,5 @@
 }
 
 .button {
-  width: 120px;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--color--button);
-  border-style: none;
-  font-size: 1rem;
-  cursor: pointer;
+  @include mixins.button(200px, 1rem 2rem, vars.$backgroundButtonLightTheme);
 }
