@@ -1,11 +1,12 @@
 import styles from '../page.module.scss';
 
-import { InstaLink, Products, Spinner } from '@/components';
+import { InstaLink, Products, ScrollUp, Spinner } from '@/components';
 import { Suspense } from 'react';
 
 export default function plates() {
   return (
     <>
+    <ScrollUp />
       <InstaLink />
       <h1 className={styles.main__title}>DES PLATEAUX GOURMANDS ET ÉLÉGANTS</h1>
       <p style={{textAlign: 'center', padding:'0.5rem'}}>Nous vous proposons des plateaux gourmands, élégants et raffinés. Du petit-déjeuner, au brunch et même au plateau apéritif nous proposons une selection de plateaux avec des produits de qualité.</p>

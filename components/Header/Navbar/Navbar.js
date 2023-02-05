@@ -14,7 +14,7 @@ const navTitle = [{
   slug: '/plateau',
   category: 'NOS PLATEAUX'
 }, {
-  slug: '/services',
+  slug: '/prestation',
   category: 'NOS PRESTATIONS'
 }, {
   slug: '/contact',

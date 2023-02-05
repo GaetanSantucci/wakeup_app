@@ -1,28 +1,67 @@
-.container {
+.container__business {
+  margin-top: 3rem;
   width: 100%;
-  position: relative;
-
-  &__background {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 500px;
-    background: no-repeat center/100% url('/images/brunch.jpg');
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-  }
+  background-image: url('/images/entreprise.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__details {
     display: flex;
-    width: 90%;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    &__card {
+      width: 50%;
+      height: 800px;
+      padding: 2rem 4rem;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      font-family: var(--fontText);
+      letter-spacing: 1px;
+      text-align: end;
+    }
+  }
+}
+
+.container__event {
+  margin-top: 3rem;
+  width: 100%;
+  background-image: url('/images/entreprise2.jpeg');
+  background-attachment: fixed;
+  background-position: center/center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__details {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__card {
+      width: 50%;
+      height: 800px;
+      padding: 2rem 4rem;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      font-family: var(--fontText);
+      letter-spacing: 1px;
+      text-align: end;
+    }
   }
 }
 
 .button {
-  width: 100%;
+  width: 120px;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: var(--color--button);

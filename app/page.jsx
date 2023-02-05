@@ -10,36 +10,11 @@ import { Articles, InstaLink, Reviews, ScrollToTop, Spinner } from '../component
 
 //Styles
 import styles from './page.module.scss';
-import { Montserrat } from '@next/font/google';
 
 import { Suspense } from 'react';
 
-// const roboto = Montserrat({ subsets: ['latin'] })
-
-// import gsap from 'gsap';
-// import { ScrollTrigger } from 'gsap/all';
-// import { useEffect } from 'react';
-
-
 
 export default function Home() {
-  
-
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   // console.log('page intialized');
-  //   const element = document.querySelector('.articles__container__image')
-  //   console.log('element: ', element);
-  //   gsap.to('.articles__container__image', {
-  //     scrollTrigger: {
-  //       trigger: '.articles__container',
-  //       scrub: true,
-  //     },
-  //     duration: 1000,
-  //     autoAlpha: 0,
-  //     y: 300,
-  //   });
-  // }, []);
 
   return (
     <>

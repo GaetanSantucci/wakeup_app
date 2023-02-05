@@ -7,6 +7,7 @@ const Header = () => {
     <header className='header'>
       <Logo />
       <Navbar />
+
     </header>
   )
 }
