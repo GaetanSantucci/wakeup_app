@@ -5,11 +5,13 @@ const styleInsta = {
   top: '43%',
   left: '0',
   transformTranslate: 'translate(-50%, -50%)',
-  padding: '0.6rem',
+  padding: '0.7rem',
   userSelect: 'none',
   backgroundColor: 'black',
   writingMode: 'vertical-rl',
   textOrientation: 'upright',
+  fontFamily: 'playfair',
+  textTransform: 'uppercase',
   color: 'white'
 }
 

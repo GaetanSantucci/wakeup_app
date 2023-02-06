@@ -1,4 +1,4 @@
-import styles from '/public/styles/Homepage.module.scss';
+import styles from '/public/styles/Footer.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -23,7 +23,6 @@ const Footer = () => {
         <ul className={styles.footer__container__item__link}>
           <li><Link href='/livraison'>Livraison</Link></li>
           <li><Link href='/images/cgu_wakeup.pdf' target='blank'>CGU</Link> / <Link href='/images/cgv_wakeup.pdf' target='blank'>CGV</Link></li>
-          <li><Link href='#'>Nos producteurs locaux</Link></li>
         </ul>
       </div>
       <p>© 2023 WAKE UP, tous droits réservés</p>

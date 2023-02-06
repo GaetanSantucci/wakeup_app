@@ -7,6 +7,10 @@ import carteVerso from '/public/images/carte_cadeau_verso.png';
 import carteCadeauPortrait from '/public/images/carte_cadeau_portrait.jpg';
 
 const Gift = () => {
+  //todo rajouter une photo dans gift__container__description
+  // todo creer module css et faire modif page en 100% pour avoir photo dew chaque cote 
+  // todo effet business page 
+  //todo gere css responsive
   return (
     <section className={styles.gift__container}>
       <h2 className={styles.gift__container__title}>carte cadeau</h2>

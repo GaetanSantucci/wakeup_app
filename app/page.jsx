@@ -2,8 +2,8 @@
 import Image from 'next/image';
 
 // Image importation for static part
-import brunchHeaderLeft from 'public/images/plateau_dolce_situation1.jpg'
-import brunchHeaderRight from 'public/images/plateau_veggie_sunshine_2.jpg';
+import brunchHeaderLeft from 'public/images/brunch_left.jpg'
+import brunchHeaderRight from 'public/images/brunch_right.jpg';
 
 // Components
 import { Articles, InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
@@ -21,8 +21,8 @@ export default function Home() {
       <ScrollToTop />
       <InstaLink />
       <div className={styles.homepage__header__container}>
-        <Image id='left' src={brunchHeaderLeft} style={{height: "50%", width:"50%"}} alt='photo plateau dolce vita'/>
-        <Image id='right' src={brunchHeaderRight} style={{height: "50%", width:"50%"}} alt='photo plateau veggie et plateau sunshine'/>
+        <Image  src={brunchHeaderLeft}  alt='photo plateau dolce vita'/>
+        <Image  src={brunchHeaderRight}  alt='photo plateau veggie et plateau sunshine'/>
       </div>
       <section className={styles.homepage__header__container__presentation}>
           <p>L'histoire de WAKE UP c'est avant tout le plaisir de faire de bons et beaux petits déjeuners fait-maison ! Nous privilégions des produits frais, locaux et surtout nous prônons le fait-maison !</p>

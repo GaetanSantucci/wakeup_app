@@ -1,5 +1,7 @@
 'use client';
 import styles from '/public/styles/Navbar.module.scss';
+console.log('styles: ', styles);
+
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -30,6 +32,11 @@ const Navbar = () => {
 
   const handleMenuChange = () => {
     setIsMenuActive(!isMenuActive);
+    // const navElement = document.getElementById('nav');
+    // console.log('navElement: ', navElement);
+    // navElement.addEventListener('click', () => {
+    //   console.log('je cliock')
+    //   navElement.classList.toggle('open');
   }
   return (
     <div className={styles.header__container}>
@@ -40,10 +47,11 @@ const Navbar = () => {
           }
         </ul>
       </div>
-      <div onClick={handleMenuChange} className={isMenuActive ? `${styles.hamburger} ${styles.is__menu__active}` : `${styles.hamburger}`} id={styles.hamburger__menu}>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
+      <div onClick={handleMenuChange} id='nav'
+        className={isMenuActive ? `${styles.nav__icon} ${styles.is__menu__active} ${styles.open}` : `${styles.nav__icon}`}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   )

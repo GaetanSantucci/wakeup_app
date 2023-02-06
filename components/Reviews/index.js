@@ -45,7 +45,7 @@ export default function Reviews() {
 
   return (
     <>
-      <h2>Nos avis clients</h2>
+      <h3>Nos avis clients</h3>
       <div className={styles.reviews__container}>
         {
           reviews.map((r, i) => {
