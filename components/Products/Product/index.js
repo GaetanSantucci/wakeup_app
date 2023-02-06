@@ -8,8 +8,11 @@ import { getProductById } from '/libs/getProductList';
 export default async function Product({ id }) {
 
   let product = []
-  product.push(await getProductById(id));
-
+  const plate = await getProductById(id);
+  // console.log('associated: ', associated.plate);
+  product.push(plate.plate);
+  // console.log('product: ', product.products);
+  //todo ajouter le composant associated puis lui passer en props le plae.products pour mappage sur les products
 
   return (
     <div className={styles.productId__container}>

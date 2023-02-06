@@ -2,7 +2,7 @@ import { cache } from 'react';
 
 export const getProductsData = cache(async () => {
 
-  const res = await fetch('http://localhost:7777/api/v1/products');
+  const res = await fetch('http://localhost:7777/api/v1/plates');
 
   if (!res.ok) {
     throw new Error('Récupération des données impossible');
@@ -10,14 +10,12 @@ export const getProductsData = cache(async () => {
   return res.json();
 })
 
-export const getProductById = async (productId) => {
+export const getProductById = async (plateId) => {
 
-  const res = await fetch(`http://localhost:7777/api/v1/products/${productId}`);
+  const res = await fetch(`http://localhost:7777/api/v1/plates/${plateId}`);
 
   if (!res.ok) {
     throw new Error('Récupération des données impossible');
   }
   return res.json();
 }
-
-// export { getProductsData, getProductById }
