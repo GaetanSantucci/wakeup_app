@@ -1,4 +1,4 @@
-import styles from '../page.module.scss';
+import styles from '/public/Homepage.module.scss';
 
 export default function producer() {
   return (

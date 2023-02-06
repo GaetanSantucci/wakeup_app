@@ -1,6 +1,5 @@
 'use client';
 
-import styles from '../page.module.scss';
 import { Business, ScrollUp } from '@/components';
 
 import { usePathname } from 'next/navigation';
