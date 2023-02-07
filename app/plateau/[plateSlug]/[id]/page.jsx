@@ -5,7 +5,6 @@ export default async function Post({ params }) {
     <>
       <ScrollUp />
       <Product id={+params.id}/>
-      <Additionnal />
     </>
   );
 }

@@ -6,7 +6,6 @@ export default function plates() {
     <>
     <ScrollUp />
       <InstaLink />
-
       <Suspense fallback={<Spinner />}>
         <Products />
       </Suspense>

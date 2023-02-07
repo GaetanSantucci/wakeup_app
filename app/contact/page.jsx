@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from '/public/styles/Homepage.module.scss';
 
 import { Contact } from '@/components/Form';
