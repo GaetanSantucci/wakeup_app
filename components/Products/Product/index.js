@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Additionnal from '../Additional';
 
 import { getProductById } from '/libs/getProductList';
+import { Suspense } from 'react';
+import Spinner from '@/components/Spinner';
 
 export default async function Product({ id }) {
 
@@ -52,7 +54,9 @@ export default async function Product({ id }) {
           })
         }
       </div>
-      <Additionnal products={fetchProduct.associated_sales} />
+      <Suspense fallback={<Spinner />}>
+        <Additionnal products={fetchProduct.associated_sales} />
+      </Suspense>
     </>
   );
 }
