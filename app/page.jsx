@@ -22,8 +22,12 @@ export default function Home() {
       <ScrollToTop />
       <InstaLink />
       <div className={styles.homepage__header__container}>
-        <Image  src={brunchHeaderLeft}  alt='photo plateau dolce vita'/>
-        <Image  src={brunchHeaderRight}  alt='photo plateau veggie et plateau sunshine'/>
+        <div className={styles.homepage__header__container__image}>
+        {/* <Image  src={brunchHeaderLeft}  alt='photo plateau dolce vita'/> */}
+        </div>
+        <div className={styles.homepage__header__container__image}>
+        {/* <Image  src={brunchHeaderRight}  alt='photo plateau veggie et plateau sunshine'/> */}
+        </div>
       </div>
       <section className={styles.homepage__header__container__presentation}>
           <p>L'histoire de WAKE UP c'est avant tout le plaisir de faire de bons et beaux petits déjeuners fait-maison ! Nous privilégions des produits frais, locaux et surtout nous prônons le fait-maison !</p>

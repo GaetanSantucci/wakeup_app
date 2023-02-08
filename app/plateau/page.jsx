@@ -5,10 +5,10 @@ export default function plates() {
   return (
     <>
     <ScrollUp />
-      <InstaLink />
       <Suspense fallback={<Spinner />}>
         <Products />
       </Suspense>
+      <InstaLink />
     </>
   )
 }
