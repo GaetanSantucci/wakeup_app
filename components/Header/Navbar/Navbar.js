@@ -1,12 +1,12 @@
 'use client';
 import styles from '/public/styles/Navbar.module.scss';
-console.log('styles: ', styles);
-
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { useState, useEffect } from 'react';
+import { useMedia } from 'react-use';
+
 
 
 const navTitle = [{
@@ -34,29 +34,26 @@ const Navbar = () => {
 
   const handleMenuChange = () => {
     setIsMenuActive(!isMenuActive);
-    // const navElement = document.getElementById('nav');
-    // console.log('navElement: ', navElement);
-    // navElement.addEventListener('click', () => {
-    //   console.log('je cliock')
-    //   navElement.classList.toggle('open');
   }
 
+  const StickNavbar = () => {
 
-  const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      console.log('windowHeight: ', windowHeight);
       windowHeight > 350 ? setStickyClass(`${styles.stickyNav}`) : setStickyClass(null);
     }
-  };
+
+
+  }
+
   useEffect(() => {
-    window.addEventListener('scroll', stickNavbar);
+
+    window.addEventListener('scroll', StickNavbar);
 
     return () => {
-      window.removeEventListener('scroll', stickNavbar);
+      window.removeEventListener('scroll', StickNavbar);
     };
-  }, []);
-
+  });
 
   return (
     <div className={styles.header__container} style={stickyClass ? { marginBottom: '130px' } : null}>

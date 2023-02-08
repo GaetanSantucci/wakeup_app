@@ -1,8 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
 import styles from '/public/styles/Homepage.module.scss';
 
 import Image from 'next/image';
 import Link from 'next/link';
+
 import carteRecto from '/public/images/carte_cadeau_recto.png';
 import carteVerso from '/public/images/carte_cadeau_verso.png';
 import carteCadeauPortrait from '/public/images/carte_cadeau_portrait.jpg';
@@ -28,7 +28,7 @@ const Gift = () => {
         <p>Simple, rapide et facile ! </p>
         <p>Pour offrir cette carte cadeau, choisissez le montant souhaité et contactez nous par <Link href='mailto=contact@wakeupbox.fr'>mail</Link></p>
         <p>Il vous sera demandé les coordonnées de la personne (nom, prénom et adresse) à qui vous souhaitez offrir la carte cadeau.Une fois les modalités saisies et le règlement effectué. Nous réaliserons l'e-carte cadeau et nous vous l'enverrons par mail !</p>
-        <p>Il ne vous restera plus qu'à l'imprimer si vous le souhaitez et l'offrir</p>
+        <p>Il ne vous restera plus qu&apos;à l&apos;imprimer si vous le souhaitez et l&apos;offrir</p>
 
         <ul>Cette carte est :
           <li>- valable 6 mois.</li>
@@ -36,7 +36,7 @@ const Gift = () => {
           <li>- fractionnable et cumulable entre elles si vous en possédez plusieurs.</li>
         </ul>
 
-        <p>Le bénéficiaire de cette carte cadeau devra inscrire le numéro de celle-ci lors de la réservation dans l'onglet code promo.</p>
+        <p>Le bénéficiaire de cette carte cadeau devra inscrire le numéro de celle-ci lors de la réservation dans l&apos;onglet code promo.</p>
       </div>
       <div className={styles.gift__container__article}>
         <div className={styles.gift__container__article__image}>
@@ -44,7 +44,7 @@ const Gift = () => {
         </div>
         <div className={styles.gift__container__article__text}>
           <p>Surprenez vos proches et offrez leur un petit déjeuner gourmand livré à domicile ! </p>
-          <p>Notre nouvelle carte cadeau prête à offrir sera parfaite pour n'importe quelles occasions !</p>
+          <p>Notre nouvelle carte cadeau prête à offrir sera parfaite pour n&apos;importe quelles occasions !</p>
           <p>Celle-ci pourra vous être envoyée par courrier.
             Vous aurez toujours la possibilité de recevoir notre e-carte cadeau sans frais supplémentaires.</p>
           <p>Les modalités sont les mêmes que pour notre e-carte cadeau. Pour toutes demandes merci de nous contacter par mail.</p>

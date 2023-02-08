@@ -14,8 +14,7 @@ const Article = ({ elem, paragraph, index }) => {
 
   const imageRef = useRef(null);
 
-  const isSmallScreen = useMedia('(max-width: 600px)');
-  console.log('isSmallScreen: ', isSmallScreen);
+  const isSmallScreen = useMedia('(max-width: 768px)');
 
   useEffect(() => {
 
@@ -30,8 +29,6 @@ const Article = ({ elem, paragraph, index }) => {
             end: 'top top',
             scrub: true,
           },
-          // duration: 2000,
-          // autoAlpha: 1,
           x: 0,
         });
       } else {
@@ -42,18 +39,12 @@ const Article = ({ elem, paragraph, index }) => {
             end: 'top top',
             scrub: true,
           },
-          // duration: 2000,
-          // autoAlpha: 1,
           x: 0,
         });
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-
-
-
 
   return (
     <>

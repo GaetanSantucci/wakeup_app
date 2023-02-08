@@ -12,12 +12,9 @@ import Spinner from '@/components/Spinner';
 export default async function Product({ id }) {
 
   let plate = []
-  // let additionnal = []
-
   const fetchProduct = await getProductById(id);
-
   plate.push(fetchProduct);
-  // additionnal.push(fetchProduct.associated_sales)
+
 
 
   return (
@@ -25,7 +22,6 @@ export default async function Product({ id }) {
       <div className={styles.productId__container}>
         {
           plate.map(elem => {
-            // console.log('elem: ', elem);
             const price = elem.price.toString().replace('.', ',');
             const text = elem.description.split('\\n')
 
