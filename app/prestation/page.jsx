@@ -1,6 +1,6 @@
 'use client';
 
-import { Business, ScrollUp } from '@/components';
+import { Business, Gift, ScrollUp } from '@/components';
 
 import { usePathname } from 'next/navigation';
 
@@ -10,9 +10,10 @@ export default function BusinessPage() {
 
   return (
     <>
-      <h2>Business Page</h2>
+      <h2>Nos prestations</h2>
       <ScrollUp />
       <Business />
+      <Gift />
     </>
   )
 }
