@@ -73,6 +73,7 @@ body {
 
 body {
   font-family: var(--fontText);
+  font-size: 1rem;
   color: vars.$colorParagraphLightTheme;
   background: vars.$backgroundPrimaryLightTheme;
 }
@@ -104,6 +105,10 @@ h3 {
   font-family: var(--fontTitle);
   color: var(--colorTitle);
   text-transform: uppercase;
+}
+
+button {
+  @include mixins.button();
 }
 
 @media (prefers-color-scheme: dark) {

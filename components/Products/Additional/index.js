@@ -18,8 +18,10 @@ const Additionnal = ({ products }) => {
                 </div>
                 <div className={styles.additionnal__container__cards__item__details}>
                   <h3>{elem.name}</h3>
-                  <p>{elem.description}</p>
-                  <span>{price} €</span>
+                  <div>
+                    <p>{elem.description} <span>{price} €</span></p>
+
+                  </div>
                 </div>
               </div>
 
@@ -28,7 +30,7 @@ const Additionnal = ({ products }) => {
         }
       </div>
       <div className={styles.additionnal__container__options}>
-        <h3>Personnaliser vos plateaux</h3>
+        <h3>Personnalisez vos plateaux</h3>
         <div className={styles.additionnal__container__options__input}>
           <label htmlFor='flower'>Formule Saint-Valentin</label><span>5,50 €</span>
           {/* <input type='checkbox' /> */}

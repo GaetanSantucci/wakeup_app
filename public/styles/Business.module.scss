@@ -50,5 +50,5 @@
 }
 
 .button {
-  @include mixins.button(200px, 1rem 2rem, vars.$backgroundButtonLightTheme);
+  @include mixins.button();
 }

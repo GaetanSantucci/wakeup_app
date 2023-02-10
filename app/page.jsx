@@ -36,7 +36,7 @@ export default function Home() {
         <Articles />
       </Suspense>
       <Reviews />
-      <div onClick={ ()=> window.document.scrollingElement?.scrollTo(0, 0)} style={{position: 'fixed', bottom: '15px', right: '10px', backgroundColor: 'black', opacity: '0.9',borderRadius: '20px',height: '40px', width: '40px', textAlign:'center', padding: '0.6rem', zIndex: '999', color: 'white', fontSize: '1.4rem' }}>&#8657;</div>
+      <div onClick={ ()=> window.document.scrollingElement?.scrollTo(0, 0)} style={{position: 'fixed', bottom: '20px', right: '20px', backgroundColor: 'black', opacity: '0.9',borderRadius: '30px',height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '999', color: 'white', fontSize: '1.4rem', cursor: 'pointer' }}>&#8657;</div>
     </>
   )
 }

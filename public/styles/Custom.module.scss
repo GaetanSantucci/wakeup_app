@@ -1,0 +1,45 @@
+@use './vars';
+@use './mixins';
+
+.custom__container {
+  width: 80%;
+  text-align: center;
+
+  &__title {
+    margin: 3rem 0;
+  }
+
+  &__article {
+    width: 100%;
+    @include mixins.flex(row);
+    margin-top: 3rem;
+
+    &__background {
+      width: 50%;
+      min-height: 600px;
+      background-image: url('/images/custom.jpg');
+      background-attachment: fixed;
+      background-position: left 10% bottom 10%;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+
+    &__details {
+      width: 50%;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      letter-spacing: 1px;
+      text-align: start;
+
+      & > * {
+        margin: 1rem 0;
+      }
+    }
+  }
+}

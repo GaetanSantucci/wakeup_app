@@ -97,6 +97,7 @@
       margin: 0.5rem;
       & h3 {
         font-size: 1.2rem;
+        text-align: center;
       }
 
       &__input {
@@ -124,10 +125,15 @@
         }
 
         &__details {
+          width: 60%;
+          height: 90%;
           position: absolute;
           margin-left: 0;
           align-items: center;
-          & > * {
+          justify-content: space-between;
+          & h3,
+          span,
+          p {
             color: vars.$backgroundPrimaryLightTheme !important;
           }
         }

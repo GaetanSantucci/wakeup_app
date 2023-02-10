@@ -27,7 +27,7 @@ export default async function Product({ id }) {
 
             return (
               <div className={styles.productId__container__card} key={elem.name}>
-                <div className={styles.productId__container__image}>
+                <div className={styles.productId__container__card__image}>
                   <Image src={elem.image} alt={elem.name} width={400} height={600} />
                 </div>
                 <div className={styles.productId__container__card__details}>
