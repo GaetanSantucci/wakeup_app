@@ -8,7 +8,7 @@ const reviews = [
     name: 'Oriane M.',
     comments: 'Une équipe très arrangeante, agréable et disponible ! J’ai commandé deux brunchs duo sucré/salé, ultra complets, garnis et d’une qualité exceptionnelle !!! De 25 à 90 ans, l’avis est unanime 😍 Ils mettent en avant tous les producteurs locaux, jusqu’aux pailles des Dômes faites en seigle ! Des fruits de saison sucrés, des viennoiseries fraîches et un large choix en salé ! Je recommande à 100% Merci à vous et à très bientôt !',
     date: '02-2022',
-    stars: 3
+    stars: 5
   }, {
     id: 1,
     name: 'Johanna R.',

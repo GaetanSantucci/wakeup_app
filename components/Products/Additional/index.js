@@ -1,16 +1,12 @@
 import styles from '/public/styles/Additionnal.module.scss';
 
-// import orange from '/public/images/orange.jpeg';
-// import prosecco from '/public/images/prosecco.jpeg';
 import Image from 'next/image';
 
 const Additionnal = ({ products }) => {
 
   return (
     <div className={styles.additionnal__container}>
-      <div className={styles.additionnal__container__options}>
 
-      </div>
       <div className={styles.additionnal__container__cards}>
         {
           products.map(elem => {
@@ -22,14 +18,29 @@ const Additionnal = ({ products }) => {
                 </div>
                 <div className={styles.additionnal__container__cards__item__details}>
                   <h3>{elem.name}</h3>
-                  <p>{elem.description}</p>
-                  <span>{price} €</span>
+                  <div>
+                    <p>{elem.description} <span>{price} €</span></p>
+
+                  </div>
                 </div>
               </div>
 
             )
           })
         }
+      </div>
+      <div className={styles.additionnal__container__options}>
+        <h3>Personnalisez vos plateaux</h3>
+        <div className={styles.additionnal__container__options__input}>
+          <label htmlFor='flower'>Formule Saint-Valentin</label><span>5,50 €</span>
+          {/* <input type='checkbox' /> */}
+          <p>Votre plateau avec son noeud accompagné  d&apos;une rose et de gypsophiles, parfait pour lui montrer votre amour</p>
+        </div>
+        <div className={styles.additionnal__container__options__input}>
+          <label htmlFor='flower'>Formule Ruban Lin</label><span>3,50 €</span>
+          {/* <input type='checkbox' /> */}
+          <p>Un joli noeud en lin pour un des plus bel effet sur notre plateau</p>
+        </div>
       </div>
     </div>
   )

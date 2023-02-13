@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import styles from '/public/styles/Maps.module.scss';
@@ -51,7 +50,7 @@ export default function Maps() {
 
         {
           isAvailable && <div className={`${styles.delivery__container__alert} ${styles.success}`}>
-            <p>Vous êtes livrable sur {isAvailable.city} pour des frais de livraison s'élevant à  {isAvailable.price} €</p>
+            <p>Vous êtes livrable sur {isAvailable.city} pour des frais de livraison s&apos;élevant à  {isAvailable.price} €</p>
           </div>
         }
         {notInOurZone &&
