@@ -1,24 +1,11 @@
-@mixin clearfix {
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-}
+@use './mixins';
 
-.title {
-  font-size: 3rem;
-  font-family: var(--fontTitle);
-  margin-bottom: 3rem;
-}
-
-.align_center {
-  text-align: center;
-}
+// .align_center {
+//   text-align: center;
+// }
 
 // Grid
 .row {
-  @include clearfix;
   margin: -20px 0;
   .col {
     padding: 0 20px;
@@ -33,33 +20,12 @@
   }
 }
 
-.content_wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.get_in_touch {
-  max-width: 650px;
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-
-  .title {
-    text-align: center;
-    font-family: var(--fontTitle);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 36px;
-    line-height: 48px;
-    padding-bottom: 48px;
-  }
-}
+//
 
 .contact_form {
   .form_field {
     position: relative;
-    margin: 32px 0;
+    margin: 2rem 0;
   }
   .input_text {
     display: block;
@@ -78,6 +44,7 @@
 
     &:focus {
       outline: none;
+      background-color: transparent;
     }
 
     &:focus,
@@ -87,6 +54,7 @@
       }
     }
   }
+
   .label {
     position: absolute;
     left: 20px;
@@ -98,20 +66,6 @@
     color: var(--color-text);
     cursor: text;
     transition: transform 0.2s ease-in-out;
-  }
-
-  .submit_btn {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    font-family: Raleway, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
   }
 }
 
@@ -132,4 +86,8 @@
       text-decoration: underline;
     }
   }
+}
+
+.button {
+  @include mixins.button();
 }

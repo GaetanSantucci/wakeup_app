@@ -4,6 +4,7 @@ import Business from './Business';
 import Custom from './Custom';
 import Gift from './Gift';
 import Header from './Header';
+import Input from './Form/Contact';
 import InstaLink from './InstaLink';
 import Maps from './Maps';
 import Product from './Products/Product';
@@ -14,4 +15,4 @@ import Spinner from './Spinner';
 import { ScrollUp, ScrollToTop } from './ScrollUp';
 import Footer from './Footer';
 
-export { Additionnal, Articles, Business, Custom, Gift, Header, InstaLink, Maps, Products, Product, Reviews, ScrollUp, ScrollToTop, Spinner, Footer };
+export { Additionnal, Articles, Business, Custom, Gift, Header, Input, InstaLink, Maps, Products, Product, Reviews, ScrollUp, ScrollToTop, Spinner, Footer };
