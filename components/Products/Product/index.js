@@ -16,7 +16,6 @@ export default async function Product({ id }) {
   plate.push(fetchProduct);
 
 
-
   return (
     <>
       <div className={styles.productId__container}>

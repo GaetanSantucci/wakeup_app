@@ -6,7 +6,7 @@ export default async function Post({ params }) {
     <>
       <ScrollUp />
       <Suspense fallback={<Spinner />}/>
-      <Product id={+params.id}/>
+      <Product id={+params.id || 1}/>
       <Suspense />
     </>
   );
