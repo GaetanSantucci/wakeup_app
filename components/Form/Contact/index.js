@@ -98,7 +98,6 @@ export default function Contact() {
           <input id='message' className={message.length > 0 ? `${styles.not_empty} ${styles.input_text} ${styles.js_input}` : `${styles.input_text} ${styles.js_input}`}
             type='text'
             value={message}
-            pattern='/^[a-zA-Z0-9!.,%()]+$/'
             title='Le message doit être composé de lettres, chiffres et les caractères suivants !,.%()'
             onChange={(e) => setMessage(e.target.value)}
             required />

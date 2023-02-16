@@ -5,8 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { useState, useEffect } from 'react';
-import { useMedia } from 'react-use';
-
 
 
 const navTitle = [{
@@ -31,32 +29,31 @@ const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false)
   const [stickyClass, setStickyClass] = useState(null);
 
-
   const handleMenuChange = () => {
     setIsMenuActive(!isMenuActive);
   }
 
   const StickNavbar = () => {
-
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 350 ? setStickyClass(`${styles.stickyNav}`) : setStickyClass(null);
+      console.log('windowHeight: ', windowHeight);
+      if (window.innerWidth > 768) {
+        windowHeight > 350 ? setStickyClass(`${styles.stickyNav}`) : setStickyClass(null);
+      }
     }
-
-
   }
 
   useEffect(() => {
-
     window.addEventListener('scroll', StickNavbar);
-
-    return () => {
-      window.removeEventListener('scroll', StickNavbar);
-    };
   });
 
+  // reset isMenuActive on page load
+  useEffect(() => {
+    setIsMenuActive(false);
+  }, [router]);
+
   return (
-    <div className={styles.header__container} style={stickyClass ? { marginBottom: '130px' } : null}>
+    <div className={styles.header__container} style={stickyClass ? { marginBottom: '130px' } : null} >
       <div className={`${styles.header__container__navbar} ${stickyClass}`} style={isMenuActive ? { display: 'flex', transition: 'all 0.4s' } : null}>
         <ul className={styles.header__navbar__list} >
           {

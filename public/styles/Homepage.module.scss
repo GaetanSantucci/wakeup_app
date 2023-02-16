@@ -7,8 +7,6 @@
     width: 50%;
 
     &:nth-child(1) {
-      // width: 50%;
-      // background-color: burlywood;
       background-image: url('/images/brunch_left.jpg');
       background-attachment: fixed;
       background-position: left bottom;
@@ -17,7 +15,6 @@
     }
 
     &:nth-child(2) {
-      // background-color: cadetblue;
       background-image: url('/images/brunch_right.jpg');
       background-attachment: fixed;
       background-position: right bottom;
@@ -35,7 +32,6 @@
 
   &__presentation {
     width: 70%;
-    // max-width: 1024px;
     padding: 2rem;
     font-family: var(--fontTest);
     font-size: 1.2rem;
@@ -58,10 +54,11 @@
   min-height: 100vh;
   transition: all 0.4s;
   font-family: var(--fontText);
+  margin-top: 2rem;
 
   &__title {
     font-size: 2.6rem;
-    margin: 2rem;
+    margin: 1rem;
     font-family: var(--fontTitle);
     text-transform: uppercase;
   }
