@@ -1,14 +1,14 @@
 @use './mixins';
 @use './vars';
 
-.container__business {
+.business__container {
   margin-top: 2rem;
   width: 80%;
 
   &__details {
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
 
     &__background {
@@ -18,7 +18,7 @@
       background-attachment: fixed;
       background-position: bottom 30%;
       background-repeat: no-repeat;
-      background-size: 50%;
+      background-size: 65%;
     }
 
     &__card {
@@ -28,7 +28,6 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-      // font-family: var(--fontText);
       letter-spacing: 1px;
       text-align: start;
 
@@ -48,12 +47,8 @@
   }
 }
 
-.button {
-  @include mixins.button();
-}
-
 @media (max-width: 768px) {
-  .container__business {
+  .business__container {
     width: 100%;
     &__details {
       flex-direction: column;
@@ -69,6 +64,10 @@
         margin-top: 2rem;
         align-items: center;
 
+        &__price {
+          font-size: 1.1rem;
+          color: vars.$colorTitleLightTheme;
+        }
         & p {
           text-align: justify;
         }
@@ -77,9 +76,11 @@
         }
       }
     }
-  }
-
-  .button {
-    @include mixins.button(100%);
+    a {
+      width: 100% !important;
+    }
+    .btn_business {
+      @include mixins.button(100%);
+    }
   }
 }

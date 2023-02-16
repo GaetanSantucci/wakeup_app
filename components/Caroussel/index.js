@@ -7,7 +7,6 @@ import styles from "/public/styles/Bootstrap.module.scss";
 
 
 const BootstrapCarousel = ({ products }) => {
-  console.log('products: ', products);
 
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {

@@ -2,17 +2,12 @@
 import styles from '/public/styles/Additionnal.module.scss';
 
 import Image from 'next/image';
-import { useMedia, useWindowSize } from 'react-use';
+import { useMedia } from 'react-use';
 
 import BootstrapCarousel from '@/components/Caroussel';
-import { useEffect } from 'react';
 
 const Additionnal = ({ products }) => {
   const isSmallScreen = useMedia('(max-width: 768px)');
-  // console.log('isSmallScreen: ', isSmallScreen);
-  useEffect(() => {
-    console.log('isSmallScreen: ', useWindowSize);
-  })
 
   return (
     <div className={styles.additionnal__container}>

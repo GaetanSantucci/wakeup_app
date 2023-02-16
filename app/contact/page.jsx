@@ -7,7 +7,6 @@ import { Input, ScrollToTop } from '@/components';
 export default function contact() {
   return (
     <>
-      <h2>N&apos;hésitez pas à nous contacter</h2>
       <ScrollToTop />
       <Contact />
     </>

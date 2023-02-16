@@ -36,7 +36,6 @@ const Navbar = () => {
   const StickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      console.log('windowHeight: ', windowHeight);
       if (window.innerWidth > 768) {
         windowHeight > 350 ? setStickyClass(`${styles.stickyNav}`) : setStickyClass(null);
       }
