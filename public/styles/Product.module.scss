@@ -128,7 +128,7 @@
         &__effect {
           position: absolute;
           z-index: -1;
-          top: 62px;
+          top: 75px;
           right: 0px;
           bottom: -50px;
           left: -180px;
@@ -221,6 +221,7 @@
         & img {
           border-radius: 0;
           width: 100%;
+          max-width: 400px;
         }
       }
 
@@ -230,7 +231,7 @@
         }
 
         & li {
-          font-size: 0.8rem;
+          // font-size: 0.8rem;
           line-height: 1.5;
         }
 
@@ -265,10 +266,16 @@
       flex-direction: column;
       width: 100%;
       margin: 0;
+      & img {
+        max-width: none;
+      }
 
       &__details {
         &__title {
           font-size: 1.8rem;
+        }
+        & li {
+          font-size: 0.9rem;
         }
 
         &__subtitle {

@@ -9,7 +9,7 @@ const Gift = () => {
       <div className={styles.gift__container__details}>
         <div className={styles.gift__container__details__background} />
         <div className={styles.gift__container__details__card}>
-          <h3>carte cadeau</h3>
+          <h3 id='carte_cadeau'>carte cadeau</h3>
           <p>Surprenez vos proches et offrez leur un petit déjeuner gourmand livré à domicile ! </p>
           <p>Simple, rapide et facile ! </p>
           <p>Pour offrir cette carte cadeau, choisissez le montant souhaité et contactez nous par <Link href='mailto=contact@wakeupbox.fr'>mail</Link></p>

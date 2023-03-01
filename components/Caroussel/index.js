@@ -20,9 +20,12 @@ const BootstrapCarousel = ({ products }) => {
           <Carousel.Item key={item.name} className={styles.itemP} interval={4000}>
             <Image src={item.image} alt="slides" width={300} height={400} />
             <Carousel.Caption className={styles.caption}>
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
-              <p>{item.price} €</p>
+              <div className={styles.carousel__card}>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <p className={styles.carousel__card__price}>{price} €</p>
+
+              </div>
             </Carousel.Caption>
           </Carousel.Item>
         )

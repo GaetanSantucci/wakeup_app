@@ -91,10 +91,10 @@
     flex-direction: column;
     margin-top: 0;
     align-items: center;
-
+    // width: 100%;
     &__options {
-      width: 100%;
-      margin: 0.5rem;
+      width: 105%;
+      margin-top: 2rem;
       & h3 {
         font-size: 1.2rem;
         text-align: center;

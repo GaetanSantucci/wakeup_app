@@ -58,7 +58,7 @@ export default function Contact() {
 
   return (
     <>
-      <h2 style={{ textAlign: 'center' }}>N&apos;hésitez pas à nous contacter</h2>
+      <h2 style={{ textAlign: 'center', margin: '1rem' }}>N&apos;hésitez pas à nous contacter</h2>
       <form className={`${styles.contact_form} ${styles.row}`} onSubmit={handleSubmit}>
         <div className={`${styles.form_field} ${styles.col} ${styles.x_50}`}>
           <input id='lastname' className={lastname.length > 0 ? `${styles.not_empty} ${styles.input_text} ${styles.js_input}` : `${styles.input_text} ${styles.js_input}`}

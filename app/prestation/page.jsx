@@ -10,7 +10,7 @@ export default function BusinessPage() {
 
   return (
     <>
-      <h2>Nos prestations</h2>
+      <h2 style={{ textAlign: 'center', margin: '1rem' }}>Nos prestations</h2>
       <ScrollToTop />
       <Business />
       <Gift />

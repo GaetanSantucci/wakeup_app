@@ -54,6 +54,7 @@
       align-items: center;
       &__background {
         width: 100%;
+        background-attachment: scroll;
         background-position: center;
         background-size: 100%;
         min-height: 440px;
@@ -63,8 +64,10 @@
         margin-top: 2rem;
         align-items: center;
 
-        & p {
+        & p,
+        ul {
           text-align: justify;
+          font-size: 0.9rem;
         }
       }
     }

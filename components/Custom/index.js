@@ -15,7 +15,7 @@ const Custom = () => {
           <p>Nos formules :</p>
 
           <p className={styles.custom__container__details__card__price}>Jolie ruban en lin avec noeud: <span>3,90 €</span></p>
-          <p className={styles.custom__container__details__card__price}>Rose, gypsophiles et ruban : <span>14,90 €</span></p>
+          <p className={styles.custom__container__details__card__price}>Fleurs du moment et ruban : <span>14,90 €</span></p>
 
           <Link href={`/contact`} >
             <button className={styles.btn_custom}>Contact</button>

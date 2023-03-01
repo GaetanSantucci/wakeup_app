@@ -58,6 +58,7 @@
       align-items: center;
       &__background {
         width: 100%;
+        background-attachment: scroll;
         background-position: center;
         background-size: 100%;
         min-height: 440px;
@@ -68,11 +69,12 @@
         align-items: center;
 
         &__price {
-          font-size: 1.1rem;
+          font-size: 1.1rem !important;
           color: vars.$colorTitleLightTheme;
         }
         & p {
           text-align: justify;
+          font-size: 0.9rem;
         }
       }
     }

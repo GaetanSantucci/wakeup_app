@@ -7,6 +7,7 @@ import { useMedia } from 'react-use';
 import BootstrapCarousel from '@/components/Caroussel';
 
 const Additionnal = ({ products }) => {
+  console.log('products: ', products);
   const isSmallScreen = useMedia('(max-width: 768px)');
 
   return (
