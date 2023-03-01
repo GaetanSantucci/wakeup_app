@@ -30,7 +30,7 @@
   width: 40px;
   height: 30px;
   position: relative;
-  margin: 50px auto;
+  margin: 3rem auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -84,7 +84,7 @@
     &__navbar {
       display: none;
       margin-right: 1rem;
-      margin-top: -5px;
+      margin-top: -20px;
     }
   }
 
@@ -142,9 +142,9 @@
     }
   }
 
-  .stickyNav {
-    display: none;
-  }
+  // .stickyNav {
+  //   display: none;
+  // }
 }
 
 .open span:nth-child(1) {

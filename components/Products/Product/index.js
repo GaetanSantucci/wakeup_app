@@ -13,6 +13,7 @@ export default async function Product({ id }) {
 
   let plate = []
   const fetchProduct = await getProductById(id);
+  console.log('fetchProduct: ', fetchProduct);
   plate.push(fetchProduct);
 
 
@@ -50,7 +51,7 @@ export default async function Product({ id }) {
         }
       </div>
       <Suspense fallback={<Spinner />}>
-        <Additionnal products={fetchProduct.associated_sales} />
+        <Additionnal products={fetchProduct.addon_sales} />
       </Suspense>
     </>
   );

@@ -1,18 +1,14 @@
 'use client';
 
 // Components
-import { Articles, InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
+import { Articles, ButtonToScrollTop, InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
 
 //Styles
 import styles from '/public/styles/Homepage.module.scss';
 
-import { Suspense/* , useState, useEffect, use */ } from 'react';
-// import { useMedia } from 'react-use';
-
+import { Suspense } from 'react';
 
 export default function Home() {
-
-
 
   return (
     <>
@@ -30,13 +26,11 @@ export default function Home() {
           <p>Qui n&apos;a jamais rêvé de se faire livrer un bon petit déjeuner ou un brunch sans qu&apos;il n&apos;ait à sortir de chez lui et surtout sans bouger le petit doigt ? </p>
           <p>Découvrez notre sélection de plateaux gourmands et laissez-vous tenter ! </p>
       </section>
-
-    
       <Suspense fallback={<Spinner />}>
-        <Articles />
+      <Articles />
       </Suspense>
       <Reviews />
-      <div onClick={ ()=> window.document.scrollingElement?.scrollTo(0, 0)} style={{position: 'fixed', bottom: '20px', right: '20px', backgroundColor: 'black', opacity: '0.9',borderRadius: '30px',height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '999', color: 'white', fontSize: '1.4rem', cursor: 'pointer' }}>&#8657;</div>
+      <ButtonToScrollTop />
     </>
   )
 }

@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-// import { useEffect, useState } from 'react';
 import styles from '/public/styles/Contact.module.scss';
 
 
@@ -31,7 +30,6 @@ export default function Contact() {
       message: message
     }
 
-    console.log('data: ', data);
     const JSONdata = JSON.stringify(data)
 
     const endpoint = 'http://localhost:7777/api/v1/contact'
@@ -60,6 +58,7 @@ export default function Contact() {
 
   return (
     <>
+      <h2 style={{ textAlign: 'center', margin: '1rem' }}>N&apos;hésitez pas à nous contacter</h2>
       <form className={`${styles.contact_form} ${styles.row}`} onSubmit={handleSubmit}>
         <div className={`${styles.form_field} ${styles.col} ${styles.x_50}`}>
           <input id='lastname' className={lastname.length > 0 ? `${styles.not_empty} ${styles.input_text} ${styles.js_input}` : `${styles.input_text} ${styles.js_input}`}
@@ -96,9 +95,8 @@ export default function Contact() {
 
         <div className={`${styles.form_field} ${styles.col} ${styles.x_100} ${styles.align_center}`}>
           <input id='message' className={message.length > 0 ? `${styles.not_empty} ${styles.input_text} ${styles.js_input}` : `${styles.input_text} ${styles.js_input}`}
-            type='text'
+            type='textarea'
             value={message}
-            pattern='/^[a-zA-Z0-9!.,%()]+$/'
             title='Le message doit être composé de lettres, chiffres et les caractères suivants !,.%()'
             onChange={(e) => setMessage(e.target.value)}
             required />
