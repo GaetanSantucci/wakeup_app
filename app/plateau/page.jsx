@@ -1,10 +1,10 @@
-import { InstaLink, Products, ScrollUp, Spinner } from '@/components';
+import { InstaLink, Products, ScrollToTop, Spinner } from '@/components';
 import { Suspense } from 'react';
 
 export default function plates() {
   return (
     <>
-    <ScrollUp />
+    <ScrollToTop />
       <Suspense fallback={<Spinner />}>
         <Products />
       </Suspense>

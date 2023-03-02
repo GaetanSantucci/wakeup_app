@@ -1,9 +1,5 @@
 @use './mixins';
 
-// .align_center {
-//   text-align: center;
-// }
-
 // Grid
 .row {
   margin: -20px 0;
@@ -19,8 +15,6 @@
     }
   }
 }
-
-//
 
 .contact_form {
   .form_field {
@@ -90,4 +84,19 @@
 
 .button {
   @include mixins.button();
+}
+
+@media (max-width: 768px) {
+  .row {
+    margin-top: 1rem;
+    .col {
+      &.x_50 {
+        width: 100%;
+      }
+    }
+  }
+
+  .button {
+    @include mixins.button(100%);
+  }
 }

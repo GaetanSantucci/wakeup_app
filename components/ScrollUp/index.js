@@ -1,10 +1,12 @@
 'use client'
 
+import styles from '/public/styles/ButtonScrollTop.module.scss';
+
 import { useEffect } from 'react'
 
-function ScrollUp() {
+const ScrollUp = () => {
   useEffect(() => window.document.scrollingElement?.scrollTo({
-    top: 350,
+    top: 160,
     left: 0,
     behavior: 'smooth'
   }), [])
@@ -12,10 +14,16 @@ function ScrollUp() {
   return null
 }
 
-function ScrollToTop() {
+const ScrollToTop = () => {
   useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
 
   return null
 }
 
-export { ScrollToTop, ScrollUp }
+const ButtonToScrollTop = () => {
+  return (
+    <div className={styles.btn_scrollTop} onClick={() => window.document.scrollingElement?.scrollTo(0, 0)}>&#8657;</div>
+  )
+}
+
+export { ScrollToTop, ScrollUp, ButtonToScrollTop }

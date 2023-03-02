@@ -2,7 +2,6 @@
 
 .header__container {
   width: 100%;
-  // margin-top: 2rem;
 }
 
 .is_active {
@@ -19,7 +18,7 @@
   color: var(--color--text-inactive);
 
   & > li {
-    margin: 3rem 0;
+    margin: 1.5rem 0;
     padding-top: 1rem;
     white-space: nowrap;
   }
@@ -30,7 +29,7 @@
   width: 40px;
   height: 30px;
   position: relative;
-  margin: 50px auto;
+  margin: 3rem auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -84,7 +83,7 @@
     &__navbar {
       display: none;
       margin-right: 1rem;
-      margin-top: -5px;
+      margin-top: -20px;
     }
   }
 
@@ -142,9 +141,9 @@
     }
   }
 
-  .stickyNav {
-    display: none;
-  }
+  // .stickyNav {
+  //   display: none;
+  // }
 }
 
 .open span:nth-child(1) {

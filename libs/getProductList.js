@@ -1,6 +1,5 @@
-import { cache } from 'react';
 
-export const getProductsData = cache(async () => {
+export const getProductsData = async () => {
 
   const res = await fetch('http://localhost:7777/api/v1/plates');
 
@@ -8,7 +7,7 @@ export const getProductsData = cache(async () => {
     throw new Error('Récupération des données impossible');
   }
   return res.json();
-})
+}
 
 export const getProductById = async (plateId) => {
 
