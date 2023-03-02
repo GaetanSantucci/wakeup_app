@@ -2,7 +2,6 @@
 
 .header__container {
   width: 100%;
-  // margin-top: 2rem;
 }
 
 .is_active {
@@ -19,7 +18,7 @@
   color: var(--color--text-inactive);
 
   & > li {
-    margin: 3rem 0;
+    margin: 1.5rem 0;
     padding-top: 1rem;
     white-space: nowrap;
   }
