@@ -11,7 +11,8 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
+
   const Modal = () => {
     return (
       <div>Email envoyé avec succès !</div>
