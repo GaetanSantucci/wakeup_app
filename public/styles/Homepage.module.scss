@@ -202,10 +202,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 437px;
 
     &__image {
       width: 100%;
-      height: 600px;
+      height: 100%;
 
       &:nth-child(1) {
         background-attachment: scroll;
@@ -214,40 +215,24 @@
       }
 
       &:nth-child(2) {
-        background-attachment: scroll;
-        background-position: bottom 30% center;
-        background-size: 100%;
+        display: none;
       }
     }
 
     &__presentation {
       text-align: justify;
-      padding: 0.8rem;
-    }
+      padding: 0.5rem;
 
-    & img {
-      width: 100% !important;
-      height: 100% !important;
+      & p {
+        margin: 1.2rem;
+      }
     }
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
   .logo,
   .thirteen img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }

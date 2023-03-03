@@ -1,7 +1,7 @@
 'use client';
 
 // Components
-import { Articles, ButtonToScrollTop, InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
+import { Articles,  InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
 
 //Styles
 import styles from '/public/styles/Homepage.module.scss';
@@ -30,7 +30,6 @@ export default function Home() {
       <Articles />
       </Suspense>
       <Reviews />
-      <ButtonToScrollTop />
     </>
   )
 }

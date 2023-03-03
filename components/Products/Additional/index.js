@@ -8,7 +8,7 @@ import BootstrapCarousel from '@/components/Caroussel';
 
 const Additionnal = ({ products }) => {
   console.log('products: ', products);
-  const isSmallScreen = useMedia('(max-width: 768px)');
+  const isSmallScreen = useMedia('(max-width: 768px)', false);
 
   return (
     <div className={styles.additionnal__container}>
@@ -37,12 +37,12 @@ const Additionnal = ({ products }) => {
       <div className={styles.additionnal__container__options}>
         <h3>Personnalisez vos plateaux</h3>
         <div className={styles.additionnal__container__options__input}>
-          <label htmlFor='flower'>Formule Saint-Valentin</label><span>5,50 €</span>
+          <label htmlFor='flower'>Formule fleurs</label><span>12,90 €</span>
           {/* <input type='checkbox' /> */}
           <p>Votre plateau avec son noeud accompagné  d&apos;une rose et de gypsophiles, parfait pour lui montrer votre amour</p>
         </div>
         <div className={styles.additionnal__container__options__input}>
-          <label htmlFor='flower'>Formule Ruban Lin</label><span>3,50 €</span>
+          <label htmlFor='flower'>Formule ruban lin</label><span>3,90 €</span>
           {/* <input type='checkbox' /> */}
           <p>Un joli noeud en lin pour un des plus bel effet sur notre plateau</p>
         </div>

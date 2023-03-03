@@ -250,13 +250,17 @@
 @media (max-width: 768px) {
   .product {
     &__title {
-      font-size: 2rem;
+      width: 95%;
+      font-size: calc(1.3rem + 0.6vw);
       text-align: center;
+      margin: 2rem 0;
     }
 
     &__text {
       text-align: justify;
       font-size: 1rem;
+      width: 95%;
+      padding: 0.5rem;
     }
   }
 

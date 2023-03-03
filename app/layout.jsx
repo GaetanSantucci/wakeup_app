@@ -3,8 +3,7 @@ import '/public/styles/globals.scss';
 
 import styles from '/public/styles/Homepage.module.scss';
 
-import { Header, Footer } from '/components';
-import { ScrollToTop } from '@/components';
+import { ButtonToScrollTop, Header, Footer, ScrollToTop } from '/components';
 
 
 export default function RootLayout({ children }) {
@@ -17,6 +16,7 @@ export default function RootLayout({ children }) {
       <main className={styles.main}>
       {children}
       </main>
+      <ButtonToScrollTop />
       <Footer />
       </body>
     </html>

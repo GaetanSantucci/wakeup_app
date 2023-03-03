@@ -5,14 +5,15 @@ const styleInsta = {
   top: '43%',
   left: '0',
   transformTranslate: 'translate(-50%, -50%)',
-  padding: '0.7rem',
+  padding: '0.4rem',
   userSelect: 'none',
   backgroundColor: 'black',
   writingMode: 'vertical-rl',
   textOrientation: 'upright',
   fontFamily: 'playfair',
   textTransform: 'uppercase',
-  color: 'white'
+  color: 'white',
+  fontSize: '0.9rem'
 }
 
 export default function InstaLink() {

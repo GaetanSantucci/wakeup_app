@@ -8,7 +8,6 @@ export default function plates() {
       <Suspense fallback={<Spinner />}>
         <Products />
       </Suspense>
-      <InstaLink />
     </>
   )
 }

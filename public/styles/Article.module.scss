@@ -68,16 +68,6 @@
   }
 }
 
-// .button {
-//   width: 180px;
-//   margin-top: 1rem;
-//   padding: 0.4rem 1rem;
-//   background-color: var(--color--button);
-//   border-style: none;
-//   font-size: 1rem;
-//   cursor: pointer;
-// }
-
 @media (max-width: 1023px) {
   .articles__container {
     width: 100%;
@@ -114,6 +104,13 @@
 @media (max-width: 600px) {
   .articles__container {
     width: 100%;
+
+    &__item__description {
+      padding: 0 0.5rem;
+      & h3 {
+        text-align: center;
+      }
+    }
 
     &__image {
       width: 100%;

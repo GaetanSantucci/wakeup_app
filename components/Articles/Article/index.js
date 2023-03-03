@@ -14,7 +14,7 @@ const Article = ({ elem, paragraph, index }) => {
 
   const imageRef = useRef(null);
 
-  const isSmallScreen = useMedia('(max-width: 768px)');
+  const isSmallScreen = useMedia('(max-width: 768px)', false);
 
   useEffect(() => {
 

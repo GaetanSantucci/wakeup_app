@@ -1,9 +1,8 @@
 export const getArticlesData = async () => {
-  try {
-    const res = await fetch('http://localhost:7777/api/v1/blogs');
-    return res.json();
 
-  } catch (err) {
-    res.status(400).json({ message: err.message });
+  const res = await fetch('http://localhost:7777/api/v1/blogs');
+  if (!res.ok) {
+    throw new Error('Récupération des données liées aux zones de livraison impossible');
   }
+  return res.json();
 }
