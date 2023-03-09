@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+//todo updater
 const styleInsta = {
   position: 'fixed',
   top: '43%',
@@ -13,7 +14,8 @@ const styleInsta = {
   fontFamily: 'playfair',
   textTransform: 'uppercase',
   color: 'white',
-  fontSize: '0.9rem'
+  fontSize: '0.9rem',
+  zIndex: 50
 }
 
 export default function InstaLink() {

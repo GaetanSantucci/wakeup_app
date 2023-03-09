@@ -10,19 +10,21 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.12",
     "@next/font": "13.1.2",
+    "@react-spring/parallax": "^9.7.1",
     "@reduxjs/toolkit": "^1.9.2",
     "bootstrap": "^5.2.3",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
-    "gsap": "^3.11.4",
     "next": "13.1.2",
     "next-redux-wrapper": "^8.1.0",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
+    "react-material-ui-carousel": "^3.4.2",
     "react-redux": "^8.0.5",
-    "react-scroll-parallax": "^3.3.2",
     "react-use": "^17.4.0"
   },
   "devDependencies": {

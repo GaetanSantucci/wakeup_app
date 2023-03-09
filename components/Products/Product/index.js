@@ -13,7 +13,6 @@ export default async function Product({ id }) {
 
   let plate = []
   const fetchProduct = await getProductById(id);
-  console.log('fetchProduct: ', fetchProduct);
   plate.push(fetchProduct);
 
 

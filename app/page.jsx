@@ -1,12 +1,22 @@
 'use client';
 
 // Components
-import { Articles,  InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
+import { Articles, InstaLink, Reviews, ScrollToTop, Spinner } from '../components';
 
 //Styles
 import styles from '/public/styles/Homepage.module.scss';
+import leftImage from '/public/images/left.jpeg';
+import rightImage from '/public/images/right.jpeg';
 
 import { Suspense } from 'react';
+
+import dynamic from 'next/dynamic'
+import Image from 'next/image';
+
+const DynamicComponentWithNoSSR = dynamic(
+  () => import('../components/Reviews'),
+  { ssr: false }
+)
 
 export default function Home() {
 
@@ -16,8 +26,10 @@ export default function Home() {
       <InstaLink />
       <div className={styles.homepage__header__container}>
         <div className={styles.homepage__header__container__image}>
+          <Image src={leftImage} alt='Plateau Dolce Vita'/>
         </div>
         <div className={styles.homepage__header__container__image}>
+        <Image src={rightImage} alt='Plateau Sunshine'/>
         </div>
       </div>
       <section className={styles.homepage__header__container__presentation}>
@@ -29,7 +41,11 @@ export default function Home() {
       <Suspense fallback={<Spinner />}>
       <Articles />
       </Suspense>
-      <Reviews />
+      <Suspense fallback={<Spinner />}>
+        <DynamicComponentWithNoSSR>
+        <Reviews />
+      </DynamicComponentWithNoSSR>
+      </Suspense> 
     </>
   )
 }

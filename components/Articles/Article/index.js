@@ -60,7 +60,7 @@ const Article = ({ elem, paragraph, index }) => {
             <button className={styles.button}>{elem.interaction}</button>
           </Link>
         </div>
-        <div /* ref={imageRef}  */ className={styles.articles__container__image}>
+        <div className={styles.articles__container__image}>
           <Image ref={imageRef} src={elem.image} width={640} height={453} alt={`photo ${elem.title}`}></Image>
         </div>
       </div>

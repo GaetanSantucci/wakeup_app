@@ -26,6 +26,23 @@
       margin: 2rem;
       padding: 1rem;
 
+      &__new {
+        position: absolute;
+        z-index: 10;
+        top: -20px;
+        left: -20px;
+        background-color: #aec49c;
+        color: rgb(255, 255, 255);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 1.2rem;
+      }
+
       &__image {
         display: flex;
         justify-content: center;
@@ -49,13 +66,12 @@
       }
       &__title {
         font-family: var(--fontTitle);
-        letter-spacing: 1.2px;
+        letter-spacing: 1.1px;
         line-height: 1.4;
         font-size: 1.2rem;
 
         & p {
           font-size: 1.6rem;
-          font-weight: bold;
           color: #000000;
         }
       }
@@ -72,7 +88,8 @@
       }
     }
     & h3 {
-      font-size: 1.8rem;
+      font-weight: 400;
+      font-size: 1.6rem;
     }
   }
 }
@@ -128,8 +145,8 @@
         &__effect {
           position: absolute;
           z-index: -1;
-          top: 75px;
-          right: 0px;
+          top: 95px;
+          right: -20px;
           bottom: -50px;
           left: -180px;
           background: #e8e8e8;

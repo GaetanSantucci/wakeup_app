@@ -7,13 +7,10 @@ import { useMedia } from 'react-use';
 import BootstrapCarousel from '@/components/Caroussel';
 
 const Additionnal = ({ products }) => {
-  console.log('products: ', products);
   const isSmallScreen = useMedia('(max-width: 768px)', false);
 
   return (
     <div className={styles.additionnal__container}>
-
-
       <div className={styles.additionnal__container__cards}>
         {isSmallScreen ? <BootstrapCarousel products={products} /> : products.map(elem => {
           const price = elem.price.toString().replace('.', ',');
@@ -30,7 +27,6 @@ const Additionnal = ({ products }) => {
                 </div>
               </div>
             </div>
-
           )
         })}
       </div>

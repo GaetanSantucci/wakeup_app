@@ -36,3 +36,4 @@ const BootstrapCarousel = ({ products }) => {
 }
 
 export default BootstrapCarousel;
+

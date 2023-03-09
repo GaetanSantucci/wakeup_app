@@ -2,6 +2,7 @@ import styles from '/public/styles/Header.module.scss';
 import Logo from './Logo/Logo.js';
 import Navbar from './Navbar/Navbar';
 
+//todo updater
 const Header = () => {
   return (
     <header className={styles.header}>

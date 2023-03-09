@@ -22,6 +22,7 @@ const navTitle = [{
 }]
 
 
+//todo a updater
 
 const Navbar = () => {
 
@@ -37,7 +38,7 @@ const Navbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       if (window.innerWidth > 768) {
-        windowHeight > 350 ? setStickyClass(`${styles.stickyNav}`) : setStickyClass(null);
+        windowHeight > 325 ? setStickyClass(`${styles.stickyNav}`) : setStickyClass(null);
       }
     }
   }
@@ -53,7 +54,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.header__container} style={stickyClass ? { marginBottom: '130px' } : null} >
-      <div className={`${styles.header__container__navbar} ${stickyClass}`} style={isMenuActive ? { display: 'flex', transition: 'all 0.4s' } : null}>
+      <div className={`${styles.header__container__navbar} ${stickyClass} `} style={isMenuActive ? { display: 'flex', transition: 'all 0.4s' } : null}>
         <ul className={styles.header__navbar__list} >
           {
             navTitle.map((elem) => <li key={elem.category} className={router === elem.slug ? `${styles.header__navbar} ${styles.is_active}` : `${styles.header__navbar}`}><Link href={elem.slug}>{elem.category}</Link></li>)
